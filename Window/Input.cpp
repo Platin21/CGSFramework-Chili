@@ -27,9 +27,14 @@ Bool Keyboard::isEmpty()
 
 Keyboard::Event Keyboard::Read()
 {
-    Keyboard::Event e = keyQueue.front();
-    keyQueue.pop();
-    return e;
+    if(keyQueue.size() != 0)
+    {
+        Keyboard::Event e = keyQueue.front();
+        keyQueue.pop();
+        return e;
+    }
+    
+    return Keyboard::Event();
 }
 
 void Mouse::addEvent(Int64 y, Int64 x,Mouse::Event::Type type,Bool inWindow)
@@ -68,8 +73,13 @@ Bool Mouse::isInWindow()
 
 Mouse::Event Mouse::Read()
 {
-    Mouse::Event e = PointQueue.front();
-    PointQueue.pop();
-    return e;
+    if(PointQueue.size() != 0)
+    {
+        Mouse::Event e = PointQueue.front();
+        PointQueue.pop();
+        return e;
+    }
+    
+    return Mouse::Event();
 }
 

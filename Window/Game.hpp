@@ -1,11 +1,14 @@
 #pragma once
 #include <iostream>
-#include "Controller.hpp"
+#include "Input.hpp"
 
 namespace CGS
 {
-    class Game : public Controller
+    class Game
     {
+    public:
+        Keyboard keyboard;
+        Mouse mouse;
     public:
         void Draw();
         void Update();

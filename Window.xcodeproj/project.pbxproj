@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		8A1605171EF6EE0300F9E916 /* Input.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8A1605151EF6EE0300F9E916 /* Input.cpp */; };
-		8A16051B1EF6FA3900F9E916 /* Controller.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8A1605191EF6FA3900F9E916 /* Controller.cpp */; };
 		8AC912651EF6D2150095AA9B /* Game.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8AC912631EF6D2150095AA9B /* Game.cpp */; };
 		8AC912681EF6D3020095AA9B /* OCPP_Game.mm in Sources */ = {isa = PBXBuildFile; fileRef = 8AC912671EF6D3020095AA9B /* OCPP_Game.mm */; };
 		8AE985061E5B110F00EA0EA5 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AE985051E5B110F00EA0EA5 /* main.swift */; };
@@ -32,8 +31,6 @@
 		8A1605151EF6EE0300F9E916 /* Input.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Input.cpp; sourceTree = "<group>"; };
 		8A1605161EF6EE0300F9E916 /* Input.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Input.hpp; sourceTree = "<group>"; };
 		8A1605181EF6EF0900F9E916 /* Types.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Types.hpp; sourceTree = "<group>"; };
-		8A1605191EF6FA3900F9E916 /* Controller.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Controller.cpp; sourceTree = "<group>"; };
-		8A16051A1EF6FA3900F9E916 /* Controller.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Controller.hpp; sourceTree = "<group>"; };
 		8AC9125F1EF6CCBB0095AA9B /* Brigde.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Brigde.h; sourceTree = "<group>"; };
 		8AC912631EF6D2150095AA9B /* Game.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Game.cpp; sourceTree = "<group>"; };
 		8AC912641EF6D2150095AA9B /* Game.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Game.hpp; sourceTree = "<group>"; };
@@ -64,8 +61,6 @@
 				8A1605151EF6EE0300F9E916 /* Input.cpp */,
 				8A1605161EF6EE0300F9E916 /* Input.hpp */,
 				8A1605181EF6EF0900F9E916 /* Types.hpp */,
-				8A1605191EF6FA3900F9E916 /* Controller.cpp */,
-				8A16051A1EF6FA3900F9E916 /* Controller.hpp */,
 			);
 			name = "C++";
 			path = Window;
@@ -175,7 +170,6 @@
 				8A1605171EF6EE0300F9E916 /* Input.cpp in Sources */,
 				8AE985061E5B110F00EA0EA5 /* main.swift in Sources */,
 				8AE9850D1E5B128300EA0EA5 /* PAView.swift in Sources */,
-				8A16051B1EF6FA3900F9E916 /* Controller.cpp in Sources */,
 				8AC912651EF6D2150095AA9B /* Game.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -99,6 +99,19 @@ namespace CGS
                 this->inWindow = inWindow;
             }
             
+            Event()
+            {
+                this->x = 0;
+                this->y = 0;
+                this->type = Type::Error;
+                this->inWindow = false;
+            }
+            
+            Bool IsInvalid() const
+            {
+                return type == Type::Error;
+            }
+            
             Bool IsLeftButtonPressed() const
             {
                 return type == Type::Pressed_LeftButton;
