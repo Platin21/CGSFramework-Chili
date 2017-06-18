@@ -12,12 +12,12 @@ import SpriteKit
 class PAView : SKView
 {
     var text:String;
-    var Game:Game_OBJCPP;
+    var Game:CPP_CGSGame;
     
     override init(frame: NSRect)
     {
         text = "";
-        Game = Game_OBJCPP();
+        Game = CPP_CGSGame();
         super.init(frame: frame);
     }
     

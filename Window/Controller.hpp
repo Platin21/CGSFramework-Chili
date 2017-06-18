@@ -10,7 +10,7 @@ namespace CGS
         Keyboard keyboard;
         Mouse mouse;
     public:
-        void addEvent(Int64 keyCode,CGS::Keyboard::Event::Type type);
-        void addEvent(Int64 y,Int64 x,CGS::Mouse::Event::Type type);
+        void addEvent(Int32 keyCode,CGS::Keyboard::Event::Type type);
+        void addEvent(Int64 y,Int64 x,CGS::Mouse::Event::Type type,Bool inWindow);
     }; 
 }

@@ -46,7 +46,18 @@
 
 - (void) CPP_AddKeyEvent:(long)key State:(CGS::Char)state
 {
-    self->game->addEvent(key, (CGS::Keyboard::Event::Type)state );
+    switch (state)
+    {
+        case 1:
+            self->game->addEvent(key, CGS::Keyboard::Event::Type::Released);
+            break;
+        case 2:
+            self->game->addEvent(key, CGS::Keyboard::Event::Type::Pressed);
+            break;
+        default:
+            self->game->addEvent(key, CGS::Keyboard::Event::Type::Error);
+            break;
+    }
 };
 
 - (void) CPP_AddMouseEvent:(long)y
@@ -54,7 +65,32 @@
                      State:(unsigned char)state
 
 {
-    self->game->addEvent(y,x, (CGS::Mouse::Event::Type)state );
+    switch (state) {
+        case 1:
+            self->game->addEvent(y,x, CGS::Mouse::Event::Type::Moved,false);
+            break;
+        case 2:
+            self->game->addEvent(y,x,CGS::Mouse::Event::Type::Pressed_ScrollWheel,false);
+            break;
+        case 3:
+            self->game->addEvent(y,x,CGS::Mouse::Event::Type::Pressed_RightButton,false);
+            break;
+        case 4:
+            self->game->addEvent(y,x,CGS::Mouse::Event::Type::Pressed_LeftButton,false);
+            break;
+        case 5:
+            self->game->addEvent(y,x,CGS::Mouse::Event::Type::Rleased_ScrollWheel,false);
+            break;
+        case 6:
+            self->game->addEvent(y,x,CGS::Mouse::Event::Type::Rleased_RightButton,false);
+            break;
+        case 7:
+            self->game->addEvent(y,x,CGS::Mouse::Event::Type::Rleased_LeftButton,false);
+            break;
+        default:
+            self->game->addEvent(y,x,CGS::Mouse::Event::Type::Error,false);
+            break;
+    }
 };
 
 - (void) dealloc
