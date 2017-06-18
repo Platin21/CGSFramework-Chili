@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8A1605171EF6EE0300F9E916 /* Input.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8A1605151EF6EE0300F9E916 /* Input.cpp */; };
+		8A16051B1EF6FA3900F9E916 /* Controller.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8A1605191EF6FA3900F9E916 /* Controller.cpp */; };
+		8AC912651EF6D2150095AA9B /* Game.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8AC912631EF6D2150095AA9B /* Game.cpp */; };
+		8AC912681EF6D3020095AA9B /* OCPP_Game.mm in Sources */ = {isa = PBXBuildFile; fileRef = 8AC912671EF6D3020095AA9B /* OCPP_Game.mm */; };
 		8AE985061E5B110F00EA0EA5 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AE985051E5B110F00EA0EA5 /* main.swift */; };
 		8AE9850D1E5B128300EA0EA5 /* PAView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AE9850C1E5B128300EA0EA5 /* PAView.swift */; };
 		8AE9850F1E5B135D00EA0EA5 /* PAViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AE9850E1E5B135D00EA0EA5 /* PAViewController.swift */; };
@@ -25,6 +29,16 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		8A1605151EF6EE0300F9E916 /* Input.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Input.cpp; sourceTree = "<group>"; };
+		8A1605161EF6EE0300F9E916 /* Input.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Input.hpp; sourceTree = "<group>"; };
+		8A1605181EF6EF0900F9E916 /* Types.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Types.hpp; sourceTree = "<group>"; };
+		8A1605191EF6FA3900F9E916 /* Controller.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Controller.cpp; sourceTree = "<group>"; };
+		8A16051A1EF6FA3900F9E916 /* Controller.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Controller.hpp; sourceTree = "<group>"; };
+		8AC9125F1EF6CCBB0095AA9B /* Brigde.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Brigde.h; sourceTree = "<group>"; };
+		8AC912631EF6D2150095AA9B /* Game.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Game.cpp; sourceTree = "<group>"; };
+		8AC912641EF6D2150095AA9B /* Game.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Game.hpp; sourceTree = "<group>"; };
+		8AC912671EF6D3020095AA9B /* OCPP_Game.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = OCPP_Game.mm; sourceTree = "<group>"; };
+		8AC912691EF6D31E0095AA9B /* OCPP_Game.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCPP_Game.h; sourceTree = "<group>"; };
 		8AE985021E5B110F00EA0EA5 /* Window */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Window; sourceTree = BUILT_PRODUCTS_DIR; };
 		8AE985051E5B110F00EA0EA5 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		8AE9850C1E5B128300EA0EA5 /* PAView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PAView.swift; sourceTree = "<group>"; };
@@ -42,10 +56,37 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8AC912661EF6D2260095AA9B /* C++ */ = {
+			isa = PBXGroup;
+			children = (
+				8AC912631EF6D2150095AA9B /* Game.cpp */,
+				8AC912641EF6D2150095AA9B /* Game.hpp */,
+				8A1605151EF6EE0300F9E916 /* Input.cpp */,
+				8A1605161EF6EE0300F9E916 /* Input.hpp */,
+				8A1605181EF6EF0900F9E916 /* Types.hpp */,
+				8A1605191EF6FA3900F9E916 /* Controller.cpp */,
+				8A16051A1EF6FA3900F9E916 /* Controller.hpp */,
+			);
+			name = "C++";
+			path = Window;
+			sourceTree = "<group>";
+		};
+		8AC9126A1EF6E7770095AA9B /* OBJC++ */ = {
+			isa = PBXGroup;
+			children = (
+				8AC912671EF6D3020095AA9B /* OCPP_Game.mm */,
+				8AC912691EF6D31E0095AA9B /* OCPP_Game.h */,
+			);
+			name = "OBJC++";
+			path = Window;
+			sourceTree = "<group>";
+		};
 		8AE984F91E5B110F00EA0EA5 = {
 			isa = PBXGroup;
 			children = (
 				8AE985041E5B110F00EA0EA5 /* Window */,
+				8AC9126A1EF6E7770095AA9B /* OBJC++ */,
+				8AC912661EF6D2260095AA9B /* C++ */,
 				8AE985031E5B110F00EA0EA5 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -64,6 +105,7 @@
 				8AE985051E5B110F00EA0EA5 /* main.swift */,
 				8AE9850C1E5B128300EA0EA5 /* PAView.swift */,
 				8AE9850E1E5B135D00EA0EA5 /* PAViewController.swift */,
+				8AC9125F1EF6CCBB0095AA9B /* Brigde.h */,
 			);
 			path = Window;
 			sourceTree = "<group>";
@@ -101,6 +143,7 @@
 					8AE985011E5B110F00EA0EA5 = {
 						CreatedOnToolsVersion = 8.2.1;
 						DevelopmentTeam = X9XHJ6AQ72;
+						LastSwiftMigration = 0830;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -128,8 +171,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				8AE9850F1E5B135D00EA0EA5 /* PAViewController.swift in Sources */,
+				8AC912681EF6D3020095AA9B /* OCPP_Game.mm in Sources */,
+				8A1605171EF6EE0300F9E916 /* Input.cpp in Sources */,
 				8AE985061E5B110F00EA0EA5 /* main.swift in Sources */,
 				8AE9850D1E5B128300EA0EA5 /* PAView.swift in Sources */,
+				8A16051B1EF6FA3900F9E916 /* Controller.cpp in Sources */,
+				8AC912651EF6D2150095AA9B /* Game.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -227,8 +274,14 @@
 		8AE9850A1E5B110F00EA0EA5 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = X9XHJ6AQ72;
+				GCC_FAST_MATH = YES;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRINGS_FILE_OUTPUT_ENCODING = "UTF-8";
+				SWIFT_OBJC_BRIDGING_HEADER = Window/Brigde.h;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -236,8 +289,13 @@
 		8AE9850B1E5B110F00EA0EA5 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = X9XHJ6AQ72;
+				GCC_FAST_MATH = YES;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRINGS_FILE_OUTPUT_ENCODING = "UTF-8";
+				SWIFT_OBJC_BRIDGING_HEADER = Window/Brigde.h;
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
@@ -261,6 +319,7 @@
 				8AE9850B1E5B110F00EA0EA5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

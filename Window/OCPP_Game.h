@@ -14,11 +14,10 @@
 - (void) CPP_Transform;
 
 - (void) CPP_AddKeyEvent:(long)key
-                       released:(bool)released
-                       pressed:(bool)pressed;
+                   State:(unsigned char)state;
 
 - (void) CPP_AddMouseEvent:(long)y
-                         _:(long)x
-                         _:(bool)lbnt
-                         _:(bool)rbnt;
+                 xPosition:(long)x
+                     State:(unsigned char)state;
+
 @end

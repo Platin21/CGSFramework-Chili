@@ -6,10 +6,19 @@
 //  Copyright © 2017 ProjektBlue. All rights reserved.
 //
 
-import AppKit
+//import AppKit
 
-let myApp = NSApplication.shared()
-let controller = PAViewController()
+func main()
+{
+    let game:CPP_CGSGame = CPP_CGSGame();
+    
+    while(true)
+    {
+        game.cpp_Update()
+        game.cpp_Transform()
+        game.cpp_Draw()
+    }
+    
+}
 
-myApp.delegate = controller;
-myApp.run()
+main();

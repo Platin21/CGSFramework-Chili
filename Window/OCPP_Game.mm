@@ -44,19 +44,17 @@
     self->game->Transform();
 }
 
-- (void) CPP_AddKeyEvent:(long)key
-                released:(bool)released
-                 pressed:(bool)pressed
+- (void) CPP_AddKeyEvent:(long)key State:(CGS::Char)state
 {
-    self->game->addEvent(key,released,pressed);
+    self->game->addEvent(key, (CGS::Keyboard::Event::Type)state );
 };
 
 - (void) CPP_AddMouseEvent:(long)y
-                         _:(long)x
-                         _:(bool)lbnt
-                         _:(bool)rbnt
+                 xPosition:(long)x
+                     State:(unsigned char)state
+
 {
-    self->game->addEvent(y,x,lbnt,rbnt);
+    self->game->addEvent(y,x, (CGS::Mouse::Event::Type)state );
 };
 
 - (void) dealloc
