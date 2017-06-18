@@ -7,11 +7,18 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "Game.hpp"
 
-@interface Game_OBJCPP : NSObject;
+@interface CPP_CGSGame : NSObject
+- (void) CPP_Draw;
+- (void) CPP_Update;
+- (void) CPP_Transform;
 
-    + (void) CPP_Draw;
-    + (void) CPP_Update;
-    + (void) CPP_Transform;
+- (void) CPP_AddKeyEvent:(long)key
+                       released:(bool)released
+                       pressed:(bool)pressed;
+
+- (void) CPP_AddMouseEvent:(long)y
+                         _:(long)x
+                         _:(bool)lbnt
+                         _:(bool)rbnt;
 @end
